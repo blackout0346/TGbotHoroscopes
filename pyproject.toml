@@ -1,0 +1,10 @@
+[project]
+name = "pythonproject"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "django-scheduler>=0.12.0",
+    "dotenv>=0.9.9",
+    "pytelegrambotapi>=4.36.1",
+    "schedule>=1.2.2",
+]

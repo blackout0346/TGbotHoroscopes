@@ -1,0 +1,9 @@
+services:
+  horoscope-bot:
+    build: .
+    container_name: horoscope-bot
+    restart: unless-stopped
+    volumes:
+      # Пробрасываем текущую папку в контейнер.
+      # Это позволит редактировать horoscopes.json и сохранять users.db прямо на сервере.
+      - .:/app
